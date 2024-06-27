@@ -1,10 +1,6 @@
-from datetime import datetime
-from tkinter import Tk, Frame, TOP, LEFT, BOTTOM, Label, Image, Button, W, messagebox, Entry, \
-    LabelFrame, HORIZONTAL, VERTICAL, Scrollbar, END, N
+from tkinter import Tk, Frame, TOP, LEFT, Label, Image, Button, W, messagebox
 from tkinter.font import BOLD
 from PIL import Image, ImageTk
-from tkcalendar import DateEntry
-from tkinter.ttk import Combobox, Treeview, Style
 
 class Dashboard:
     def __init__(self):
@@ -282,6 +278,3 @@ class Dashboard:
         result = messagebox.askyesno('EXIT', 'Do you want to exit?')
         if result:
             self.window.destroy()
-
-if __name__ == '__main__':
-    Dashboard()
